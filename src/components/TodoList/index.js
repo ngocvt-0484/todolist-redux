@@ -38,7 +38,7 @@ export default function TodoList() {
   return (
     <Row style={{ height: 'calc(100% - 40px)' }}>
       <Col span={24} style={{ height: 'calc(100% - 40px)', overflowY: 'auto' }}>
-        {todoList.map(todo => <Todo name={todo.name} prioriry={todo.priority} key={todo.id} />)}
+        {todoList.map(todo => <Todo name={todo.name} prioriry={todo.priority} key={todo.id} completed={todo.completed} id={todo.id} />)}
       </Col>
       <Col span={24}>
         <Input.Group style={{ display: 'flex' }} compact>
